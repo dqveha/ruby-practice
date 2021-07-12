@@ -11,7 +11,11 @@ def ping_pong(number)
   input = 1..number
   new_array = []
   input.each do |element|
-    new_array.push(element)
+    if element%3 == 0 
+      new_array.push("ping")
+    else
+      new_array.push(element)
+    end
   end
   new_array
 end
